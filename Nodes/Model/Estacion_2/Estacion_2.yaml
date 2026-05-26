@@ -1,0 +1,70 @@
+Name: Estacion 2
+Id: g=c060525156560f6d5b6ef1e2f89584e1
+Type: FolderType
+Children:
+- Name: Voltaje
+  Id: g=9d4c58045b93cd19d3610232bddb4535
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Corriente
+  Id: g=3f7bc986ce24381aad1adca12ef543c7
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Potencia Activa
+  Id: g=f2b2f8c0f469d7882a70d8f703adb825
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Frecuencia
+  Id: g=b473856c92d9b33475609d70d298a957
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Temperatura
+  Id: g=7175fe94c0026f608a83e17bde6d10c8
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: OnOff
+  Id: g=c0f8eae5d6b02d4026a45898515dad26
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Generador_Bomba
+  Id: g=82475f01e0827038656e341a282431ee
+  Type: NetLogic
+  Children:
+  - Name: Seed
+    Id: g=cd0e1afd75473c226c181af23a3392e7
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 78612
+  - Name: Control
+    Id: g=b909f0b51aa1a25b08d5c4f10933d6b3
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 40
+  - Class: Method
+    Name: CambioControl
+    Id: g=01bdb3f793e6b29aefdbe9fff4c8d430
+    Children:
+    - Name: ns=0;InputArguments
+      Id: g=a1e6ee25fb797b61ad0170453ae49e6c
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"nuevoControl","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: Alarm
+  Id: g=37423568274f0c498d989318bb25b45d
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Potencia Aparente
+  Id: g=37b53b5e50df7d296f808ae735dd4c76
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Potencia Reactiva
+  Id: g=456aa3c21b2cdfee7125caa0616b2774
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Consumo Electrico
+  Id: g=795df2be4465affb5d0a0d5b1a809108
+  Type: BaseDataVariableType
+  DataType: Float
