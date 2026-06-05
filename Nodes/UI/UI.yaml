@@ -10,6 +10,23 @@ Children:
     Children:
     - Name: Default
       Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0a1e41d9"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#3a8fdd"
+      - Name: PressedColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0a1628"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
     - Name: Accent
       Type: ButtonStyle
       Children:
@@ -363,7 +380,7 @@ Children:
   - Name: IPAddress
     Type: BaseDataVariableType
     DataType: String
-    Value: "192.168.1.160"
+    Value: "192.168.1.246"
   - Name: Port
     Type: BaseDataVariableType
     DataType: UInt16
