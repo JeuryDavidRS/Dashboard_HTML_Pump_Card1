@@ -13,6 +13,8 @@ using FTOptix.Core;
 using FTOptix.NetLogic;
 using FTOptix.WebUI;
 using FTOptix.OPCUAServer;
+using FTOptix.CommunicationDriver;
+using FTOptix.Modbus;
 #endregion
 
 public class Dashboard_Logic : BaseNetLogic

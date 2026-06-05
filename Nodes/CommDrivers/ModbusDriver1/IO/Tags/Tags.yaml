@@ -1,0 +1,38 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: On
+  Type: ModbusTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+- Name: Off
+  Type: ModbusTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 1
+- Name: Alarma
+  Type: ModbusTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 1
+  - Name: NumCoil
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2

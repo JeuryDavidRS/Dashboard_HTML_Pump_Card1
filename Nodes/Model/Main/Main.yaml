@@ -6,10 +6,34 @@ Children:
   Id: g=561338909898a7936c412307e42b186e
   Type: BaseDataVariableType
   DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=1ae040f447319cb730cfbe20c576a8b5
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/Circutor/Tags/Voltaje"
+    Children:
+    - Name: Mode
+      Id: g=bfe2d39d939b69b820c171aa44cb0fcb
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: Corriente
   Id: g=50dc4ba0eb393cd252d7ce97d1cd92b3
   Type: BaseDataVariableType
   DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=955c0caa4109052df33aee26c28b2ae4
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/Circutor/Tags/Corriente"
+    Children:
+    - Name: Mode
+      Id: g=375cad448950bc5461bed16844761559
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: Potencia Activa
   Id: g=b90ccad83d9400834b3c2af713ba0fa4
   Type: BaseDataVariableType
@@ -26,36 +50,22 @@ Children:
   Id: g=d493502f80920f56cdd40ea44556019f
   Type: BaseDataVariableType
   DataType: Boolean
-- Name: Generador_Bomba
-  Id: g=8f8b4c8b0332afd4258f1cf3ae1ec747
-  Type: NetLogic
-  Children:
-  - Name: Seed
-    Id: g=400eab62d2e226f4729c03bb6a4e6f6c
-    Type: BaseDataVariableType
-    DataType: Int32
-    Value: 424453
-  - Name: Control
-    Id: g=aab99ec5f04cfe3d4a8be8e13ff973b8
-    Type: BaseDataVariableType
-    DataType: Int32
-    Value: -40
-  - Class: Method
-    Name: CambioControl
-    Id: g=75ce5b9daa443c73e28a0bf3e757bcca
-    Children:
-    - Name: ns=0;InputArguments
-      Id: g=62e298d26bed8b8d627eaea89878ec78
-      Type: BaseVariableType
-      DataType: Argument
-      ReferenceType: HasProperty
-      ValueRank: OneDimension
-      ArrayDimensions: [0]
-      Value: [{"TypeId":{"Id":296},"Body":{"Name":"nuevoControl","DataType":{"Id":6},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
 - Name: Alarm
   Id: g=8fc5b92ef7a66c1ad9645421d0c7fd56
   Type: BaseDataVariableType
   DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Id: g=ff669033ef4cc6bd1676c4dd0ec330b0
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/IO/Tags/Alarma"
+    Children:
+    - Name: Mode
+      Id: g=dd4a0da7d9a708d03d160aff8bb05428
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: Potencia Aparente
   Id: g=eb2c5bc9bca36455c58e7df012e99f01
   Type: BaseDataVariableType

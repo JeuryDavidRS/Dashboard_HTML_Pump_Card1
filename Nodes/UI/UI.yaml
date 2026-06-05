@@ -597,7 +597,7 @@ Children:
         DataType: NodeId
         ModellingRule: Optional
         ValueRank: ScalarOrOneDimension
-        Value: "/Objects/Dashboard_HTML_Pump_Card1/Model/Estacion 1"
+        Value: {"IdType":2,"Id":"35ac0a21c79650f60ee6db0d99b61d5e","Namespace":18}
     - Name: Estacion
       Type: Label
       Children:
@@ -749,7 +749,7 @@ Children:
         DataType: NodeId
         ModellingRule: Optional
         ValueRank: ScalarOrOneDimension
-        Value: "/Objects/Dashboard_HTML_Pump_Card1/Model/Estacion 2"
+        Value: {"IdType":2,"Id":"c060525156560f6d5b6ef1e2f89584e1","Namespace":18}
     - Name: Estacion
       Type: Label
       Children:
@@ -901,7 +901,7 @@ Children:
         DataType: NodeId
         ModellingRule: Optional
         ValueRank: ScalarOrOneDimension
-        Value: "/Objects/Dashboard_HTML_Pump_Card1/Model/Estacion 3"
+        Value: {"IdType":2,"Id":"88099eec69e79e2cdff02699a969ca1a","Namespace":18}
     - Name: Estacion
       Type: Label
       Children:
@@ -1053,7 +1053,7 @@ Children:
         DataType: NodeId
         ModellingRule: Optional
         ValueRank: ScalarOrOneDimension
-        Value: "/Objects/Dashboard_HTML_Pump_Card1/Model/Estacion 4"
+        Value: {"IdType":2,"Id":"cdbb659fa9f92f54dc42c624303fb806","Namespace":18}
     - Name: Estacion
       Type: Label
       Children:

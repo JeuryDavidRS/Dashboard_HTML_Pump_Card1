@@ -3,7 +3,3 @@ Id: g=946b60fd0d4f102d90955ce16bcf7582
 Type: ModelCategoryFolder
 Children:
 - File: Main/Main.yaml
-- File: Estacion_1/Estacion_1.yaml
-- File: Estacion_2/Estacion_2.yaml
-- File: Estacion_3/Estacion_3.yaml
-- File: Estacion_4/Estacion_4.yaml

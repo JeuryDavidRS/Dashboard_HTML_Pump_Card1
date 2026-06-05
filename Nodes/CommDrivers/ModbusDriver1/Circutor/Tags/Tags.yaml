@@ -1,0 +1,24 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: Voltaje
+  Type: ModbusTag
+  DataType: Int32
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+- Name: Corriente
+  Type: ModbusTag
+  DataType: Int32
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 2
