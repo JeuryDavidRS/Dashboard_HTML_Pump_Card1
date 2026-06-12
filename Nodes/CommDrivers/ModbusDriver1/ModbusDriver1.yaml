@@ -27,3 +27,4 @@ Children:
   DataType: FlowControl
 - File: IO/IO.yaml
 - File: Circutor/Circutor.yaml
+- File: Sensor/Sensor.yaml

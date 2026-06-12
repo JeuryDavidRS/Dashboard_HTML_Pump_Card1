@@ -90,15 +90,15 @@ Project:
    Module: FTOptix.Modbus.Net
    Version: 1.0
  Statistics:
-  TotalNodeCount: 1076
-  Objects: 232
+  TotalNodeCount: 1090
+  Objects: 237
   ObjectTypes: 6
-  Variables: 838
+  Variables: 847
   VariableTypes: 0
   DataTypes: 0
   Methods: 0
-  References: 30
+  References: 36
   ReferenceTypes: 0
-  Files: 32
+  Files: 36
  Nodes:
  - File: Nodes/Dashboard_HTML_Pump_Card1.yaml
