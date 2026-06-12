@@ -93,10 +93,10 @@ Children:
       - Name: TagId
         Id: ns=25;i=20311
         Type: PropertyType
-        DataType: BaseDataType
+        DataType: UInt32
         DisplayName: {"LocaleId":"en-US","Text":"TagId"}
         Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
-        Value: {"Type":7,"Body":47}
+        Value: 47
       - Name: isKPI
         Id: ns=25;i=20312
         Type: PropertyType
@@ -115,6 +115,11 @@ Children:
         DataType: NormalizedString
         DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
         Description: {"LocaleId":"en-US","Text":"Tag unit"}
+      - Name: TagQuality
+        Id: ns=25;g=aafdbba0b77c669a49cff250aaa5bb17
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"","Text":"TagQuality"}
     - Name: ns=25;IO_O2
       Id: ns=25;s=IO_O2
       Type: TagType
@@ -144,10 +149,10 @@ Children:
       - Name: TagId
         Id: ns=25;i=20318
         Type: PropertyType
-        DataType: BaseDataType
+        DataType: UInt32
         DisplayName: {"LocaleId":"en-US","Text":"TagId"}
         Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
-        Value: {"Type":7,"Body":48}
+        Value: 48
       - Name: isKPI
         Id: ns=25;i=20319
         Type: PropertyType
@@ -166,6 +171,11 @@ Children:
         DataType: NormalizedString
         DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
         Description: {"LocaleId":"en-US","Text":"Tag unit"}
+      - Name: TagQuality
+        Id: ns=25;g=97dc9e92fa0b7c3179583c642b20602f
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"","Text":"TagQuality"}
     - Name: ns=25;IO_O3
       Id: ns=25;s=IO_O3
       Type: TagType
@@ -195,10 +205,10 @@ Children:
       - Name: TagId
         Id: ns=25;i=20325
         Type: PropertyType
-        DataType: BaseDataType
+        DataType: UInt32
         DisplayName: {"LocaleId":"en-US","Text":"TagId"}
         Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
-        Value: {"Type":7,"Body":49}
+        Value: 49
       - Name: isKPI
         Id: ns=25;i=20326
         Type: PropertyType
@@ -217,6 +227,11 @@ Children:
         DataType: NormalizedString
         DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
         Description: {"LocaleId":"en-US","Text":"Tag unit"}
+      - Name: TagQuality
+        Id: ns=25;g=0723af97277c11e69853a6fcff72704d
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"","Text":"TagQuality"}
     - Name: ns=25;Corriente
       Id: ns=25;s=Corriente
       Type: TagType
@@ -247,10 +262,10 @@ Children:
       - Name: TagId
         Id: ns=25;i=20402
         Type: PropertyType
-        DataType: BaseDataType
+        DataType: UInt32
         DisplayName: {"LocaleId":"en-US","Text":"TagId"}
         Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
-        Value: {"Type":7,"Body":51}
+        Value: 51
       - Name: isKPI
         Id: ns=25;i=20403
         Type: PropertyType
@@ -270,6 +285,11 @@ Children:
         DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
         Description: {"LocaleId":"en-US","Text":"Tag unit"}
         Value: "cA"
+      - Name: TagQuality
+        Id: ns=25;g=abfe8b0cd2c75ad2d246a7e58e17db60
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"","Text":"TagQuality"}
     - Name: ns=25;Temperatura
       Id: ns=25;s=Temperatura
       Type: TagType
@@ -300,10 +320,10 @@ Children:
       - Name: TagId
         Id: ns=25;i=20395
         Type: PropertyType
-        DataType: BaseDataType
+        DataType: UInt32
         DisplayName: {"LocaleId":"en-US","Text":"TagId"}
         Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
-        Value: {"Type":7,"Body":53}
+        Value: 53
       - Name: isKPI
         Id: ns=25;i=20396
         Type: PropertyType
@@ -323,6 +343,11 @@ Children:
         DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
         Description: {"LocaleId":"en-US","Text":"Tag unit"}
         Value: "°C"
+      - Name: TagQuality
+        Id: ns=25;g=696c85e9ce8eb7ea384427d4712803eb
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"","Text":"TagQuality"}
     - Name: ns=25;Frecuencia
       Id: ns=25;s=Frecuencia
       Type: TagType
@@ -353,10 +378,10 @@ Children:
       - Name: TagId
         Id: ns=25;i=20388
         Type: PropertyType
-        DataType: BaseDataType
+        DataType: UInt32
         DisplayName: {"LocaleId":"en-US","Text":"TagId"}
         Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
-        Value: {"Type":7,"Body":60}
+        Value: 60
       - Name: isKPI
         Id: ns=25;i=20389
         Type: PropertyType
@@ -376,6 +401,11 @@ Children:
         DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
         Description: {"LocaleId":"en-US","Text":"Tag unit"}
         Value: "Hz"
+      - Name: TagQuality
+        Id: ns=25;g=645a140bac2e0d945445fd36cef9c464
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"","Text":"TagQuality"}
     - Name: ns=25;status
       Id: ns=25;s=status
       Type: TagType
@@ -406,10 +436,10 @@ Children:
       - Name: TagId
         Id: ns=25;i=20353
         Type: PropertyType
-        DataType: BaseDataType
+        DataType: UInt32
         DisplayName: {"LocaleId":"en-US","Text":"TagId"}
         Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
-        Value: {"Type":7,"Body":55}
+        Value: 55
       - Name: isKPI
         Id: ns=25;i=20354
         Type: PropertyType
@@ -428,6 +458,11 @@ Children:
         DataType: NormalizedString
         DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
         Description: {"LocaleId":"en-US","Text":"Tag unit"}
+      - Name: TagQuality
+        Id: ns=25;g=0209120412412cd0968d0a0078ae6b84
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"","Text":"TagQuality"}
     - Name: ns=25;Potencia_Activa
       Id: ns=25;s=Potencia_Activa
       Type: TagType
@@ -458,10 +493,10 @@ Children:
       - Name: TagId
         Id: ns=25;i=20360
         Type: PropertyType
-        DataType: BaseDataType
+        DataType: UInt32
         DisplayName: {"LocaleId":"en-US","Text":"TagId"}
         Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
-        Value: {"Type":7,"Body":56}
+        Value: 56
       - Name: isKPI
         Id: ns=25;i=20361
         Type: PropertyType
@@ -481,6 +516,11 @@ Children:
         DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
         Description: {"LocaleId":"en-US","Text":"Tag unit"}
         Value: "W"
+      - Name: TagQuality
+        Id: ns=25;g=23704cc5fcbbb422533971fed096cba1
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"","Text":"TagQuality"}
     - Name: ns=25;Potencia_Reactiva
       Id: ns=25;s=Potencia_Reactiva
       Type: TagType
@@ -510,10 +550,10 @@ Children:
       - Name: TagId
         Id: ns=25;i=20367
         Type: PropertyType
-        DataType: BaseDataType
+        DataType: UInt32
         DisplayName: {"LocaleId":"en-US","Text":"TagId"}
         Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
-        Value: {"Type":7,"Body":57}
+        Value: 57
       - Name: isKPI
         Id: ns=25;i=20368
         Type: PropertyType
@@ -532,6 +572,11 @@ Children:
         DataType: NormalizedString
         DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
         Description: {"LocaleId":"en-US","Text":"Tag unit"}
+      - Name: TagQuality
+        Id: ns=25;g=70d67a1a2c275c318a928000bbf94b27
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"","Text":"TagQuality"}
     - Name: ns=25;Potencia_Aparente
       Id: ns=25;s=Potencia_Aparente
       Type: TagType
@@ -561,10 +606,10 @@ Children:
       - Name: TagId
         Id: ns=25;i=20374
         Type: PropertyType
-        DataType: BaseDataType
+        DataType: UInt32
         DisplayName: {"LocaleId":"en-US","Text":"TagId"}
         Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
-        Value: {"Type":7,"Body":58}
+        Value: 58
       - Name: isKPI
         Id: ns=25;i=20375
         Type: PropertyType
@@ -583,6 +628,11 @@ Children:
         DataType: NormalizedString
         DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
         Description: {"LocaleId":"en-US","Text":"Tag unit"}
+      - Name: TagQuality
+        Id: ns=25;g=fe0f6688e0b15d877b298cc5eebaf346
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"","Text":"TagQuality"}
     - Name: ns=25;Consumo
       Id: ns=25;s=Consumo
       Type: TagType
@@ -613,10 +663,10 @@ Children:
       - Name: TagId
         Id: ns=25;i=20381
         Type: PropertyType
-        DataType: BaseDataType
+        DataType: UInt32
         DisplayName: {"LocaleId":"en-US","Text":"TagId"}
         Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
-        Value: {"Type":7,"Body":59}
+        Value: 59
       - Name: isKPI
         Id: ns=25;i=20382
         Type: PropertyType
@@ -636,6 +686,11 @@ Children:
         DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
         Description: {"LocaleId":"en-US","Text":"Tag unit"}
         Value: "W·h"
+      - Name: TagQuality
+        Id: ns=25;g=359b0777d5f9da7bef3c753e3abde0c2
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"","Text":"TagQuality"}
     - Name: ns=25;Voltaje
       Id: ns=25;s=Voltaje
       Type: TagType
@@ -666,10 +721,10 @@ Children:
       - Name: TagId
         Id: ns=25;i=20409
         Type: PropertyType
-        DataType: BaseDataType
+        DataType: UInt32
         DisplayName: {"LocaleId":"en-US","Text":"TagId"}
         Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
-        Value: {"Type":7,"Body":50}
+        Value: 50
       - Name: isKPI
         Id: ns=25;i=20410
         Type: PropertyType
@@ -689,6 +744,11 @@ Children:
         DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
         Description: {"LocaleId":"en-US","Text":"Tag unit"}
         Value: "V"
+      - Name: TagQuality
+        Id: ns=25;g=3d4a2e4b489216fe861625ec5cce8a90
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"","Text":"TagQuality"}
   - Name: TagType
     Id: ns=25;i=2002
     Supertype: BaseDataVariableType
