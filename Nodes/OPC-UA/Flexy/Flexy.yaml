@@ -1,0 +1,907 @@
+Name: Flexy
+Id: g=a3db72712d55dc5caae1acbff6029fd4
+Type: OPCUAClient
+Children:
+- Name: ServerEndpointURL
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "opc.tcp://192.168.1.46:4840"
+- Name: MinimumMessageSecurityMode
+  Type: BaseDataVariableType
+  DataType: ns=23;MessageSecurityModeEnum
+- Name: MinimumSecurityPolicy
+  Type: BaseDataVariableType
+  DataType: ns=23;SecurityPolicyEnum
+- Name: UserIdentityType
+  Type: BaseDataVariableType
+  DataType: UserIdentityTypeEnum
+- Name: ConnectionStatus
+  Type: BaseDataVariableType
+  DataType: ConnectionStatusEnum
+  AccessLevel: Read
+- Name: ServerUri
+  Type: BaseDataVariableType
+  DataType: String
+  AccessLevel: Read
+- Name: Events
+  Type: BaseDataVariableType
+  DataType: EventsEnum
+  Value: 1
+- Name: RuntimeConfigurations
+  Type: BaseObjectType
+- Class: Reference
+  Target: ns=23;i=8
+  Direction: Forward
+- Class: Reference
+  Target: ns=23;i=9
+  Direction: Forward
+- Class: Reference
+  Target: ns=23;i=54
+  Direction: Forward
+- Class: Reference
+  Target: ns=23;i=57
+  Direction: Forward
+- Class: Reference
+  Target: ns=23;i=91
+  Direction: Forward
+- Class: Reference
+  Target: ns=23;i=60
+  Direction: Forward
+- Class: Reference
+  Target: ns=23;i=63
+  Direction: Forward
+- Class: Reference
+  Target: ns=23;i=83
+  Direction: Forward
+- Class: Reference
+  Target: ns=23;i=75
+  Direction: Forward
+- Name: Objects
+  Type: BaseObjectType
+  Children:
+  - Name: ns=25;EwonTags
+    Id: ns=25;i=5001
+    Type: FolderType
+    DisplayName: {"LocaleId":"","Text":"EwonTags"}
+    Children:
+    - Name: ns=25;IO_O1
+      Id: ns=25;s=IO_O1
+      Type: TagType
+      DataType: Boolean
+      DisplayName: {"LocaleId":"en-US","Text":"IO_O1"}
+      ReferenceType: Organizes
+      Children:
+      - Name: AlarmHint
+        Id: ns=25;i=20308
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmHint"}
+        Description: {"LocaleId":"en-US","Text":"Alarm hint"}
+      - Name: AccessRights
+        Id: ns=25;i=20309
+        Type: PropertyType
+        DataType: TagAccessRights
+        DisplayName: {"LocaleId":"en-US","Text":"AccessRights"}
+        Description: {"LocaleId":"en-US","Text":"Access rights"}
+        Value: 1
+      - Name: AlarmType
+        Id: ns=25;i=20310
+        Type: PropertyType
+        DataType: TagAlarmType
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmType"}
+        Description: {"LocaleId":"en-US","Text":"Alarm type"}
+      - Name: TagId
+        Id: ns=25;i=20311
+        Type: PropertyType
+        DataType: BaseDataType
+        DisplayName: {"LocaleId":"en-US","Text":"TagId"}
+        Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
+        Value: {"Type":7,"Body":47}
+      - Name: isKPI
+        Id: ns=25;i=20312
+        Type: PropertyType
+        DataType: Boolean
+        DisplayName: {"LocaleId":"en-US","Text":"isKPI"}
+        Description: {"LocaleId":"en-US","Text":"Tag is KPI"}
+      - Name: ns=25;Quality
+        Id: ns=25;i=20313
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"en-US","Text":"Quality"}
+        Description: {"LocaleId":"en-US","Text":"Quality of the tag"}
+      - Name: TagUnit
+        Id: ns=25;i=20314
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
+        Description: {"LocaleId":"en-US","Text":"Tag unit"}
+    - Name: ns=25;IO_O2
+      Id: ns=25;s=IO_O2
+      Type: TagType
+      DataType: Boolean
+      DisplayName: {"LocaleId":"en-US","Text":"IO_O2"}
+      ReferenceType: Organizes
+      Children:
+      - Name: AlarmHint
+        Id: ns=25;i=20315
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmHint"}
+        Description: {"LocaleId":"en-US","Text":"Alarm hint"}
+      - Name: AccessRights
+        Id: ns=25;i=20316
+        Type: PropertyType
+        DataType: TagAccessRights
+        DisplayName: {"LocaleId":"en-US","Text":"AccessRights"}
+        Description: {"LocaleId":"en-US","Text":"Access rights"}
+        Value: 1
+      - Name: AlarmType
+        Id: ns=25;i=20317
+        Type: PropertyType
+        DataType: TagAlarmType
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmType"}
+        Description: {"LocaleId":"en-US","Text":"Alarm type"}
+      - Name: TagId
+        Id: ns=25;i=20318
+        Type: PropertyType
+        DataType: BaseDataType
+        DisplayName: {"LocaleId":"en-US","Text":"TagId"}
+        Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
+        Value: {"Type":7,"Body":48}
+      - Name: isKPI
+        Id: ns=25;i=20319
+        Type: PropertyType
+        DataType: Boolean
+        DisplayName: {"LocaleId":"en-US","Text":"isKPI"}
+        Description: {"LocaleId":"en-US","Text":"Tag is KPI"}
+      - Name: ns=25;Quality
+        Id: ns=25;i=20320
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"en-US","Text":"Quality"}
+        Description: {"LocaleId":"en-US","Text":"Quality of the tag"}
+      - Name: TagUnit
+        Id: ns=25;i=20321
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
+        Description: {"LocaleId":"en-US","Text":"Tag unit"}
+    - Name: ns=25;IO_O3
+      Id: ns=25;s=IO_O3
+      Type: TagType
+      DataType: Boolean
+      DisplayName: {"LocaleId":"en-US","Text":"IO_O3"}
+      ReferenceType: Organizes
+      Children:
+      - Name: AlarmHint
+        Id: ns=25;i=20322
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmHint"}
+        Description: {"LocaleId":"en-US","Text":"Alarm hint"}
+      - Name: AccessRights
+        Id: ns=25;i=20323
+        Type: PropertyType
+        DataType: TagAccessRights
+        DisplayName: {"LocaleId":"en-US","Text":"AccessRights"}
+        Description: {"LocaleId":"en-US","Text":"Access rights"}
+        Value: 1
+      - Name: AlarmType
+        Id: ns=25;i=20324
+        Type: PropertyType
+        DataType: TagAlarmType
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmType"}
+        Description: {"LocaleId":"en-US","Text":"Alarm type"}
+      - Name: TagId
+        Id: ns=25;i=20325
+        Type: PropertyType
+        DataType: BaseDataType
+        DisplayName: {"LocaleId":"en-US","Text":"TagId"}
+        Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
+        Value: {"Type":7,"Body":49}
+      - Name: isKPI
+        Id: ns=25;i=20326
+        Type: PropertyType
+        DataType: Boolean
+        DisplayName: {"LocaleId":"en-US","Text":"isKPI"}
+        Description: {"LocaleId":"en-US","Text":"Tag is KPI"}
+      - Name: ns=25;Quality
+        Id: ns=25;i=20327
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"en-US","Text":"Quality"}
+        Description: {"LocaleId":"en-US","Text":"Quality of the tag"}
+      - Name: TagUnit
+        Id: ns=25;i=20328
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
+        Description: {"LocaleId":"en-US","Text":"Tag unit"}
+    - Name: ns=25;Corriente
+      Id: ns=25;s=Corriente
+      Type: TagType
+      DataType: Float
+      DisplayName: {"LocaleId":"en-US","Text":"Corriente"}
+      ReferenceType: Organizes
+      Value: 23.0
+      Children:
+      - Name: AlarmHint
+        Id: ns=25;i=20399
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmHint"}
+        Description: {"LocaleId":"en-US","Text":"Alarm hint"}
+      - Name: AccessRights
+        Id: ns=25;i=20400
+        Type: PropertyType
+        DataType: TagAccessRights
+        DisplayName: {"LocaleId":"en-US","Text":"AccessRights"}
+        Description: {"LocaleId":"en-US","Text":"Access rights"}
+        Value: 1
+      - Name: AlarmType
+        Id: ns=25;i=20401
+        Type: PropertyType
+        DataType: TagAlarmType
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmType"}
+        Description: {"LocaleId":"en-US","Text":"Alarm type"}
+      - Name: TagId
+        Id: ns=25;i=20402
+        Type: PropertyType
+        DataType: BaseDataType
+        DisplayName: {"LocaleId":"en-US","Text":"TagId"}
+        Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
+        Value: {"Type":7,"Body":51}
+      - Name: isKPI
+        Id: ns=25;i=20403
+        Type: PropertyType
+        DataType: Boolean
+        DisplayName: {"LocaleId":"en-US","Text":"isKPI"}
+        Description: {"LocaleId":"en-US","Text":"Tag is KPI"}
+      - Name: ns=25;Quality
+        Id: ns=25;i=20404
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"en-US","Text":"Quality"}
+        Description: {"LocaleId":"en-US","Text":"Quality of the tag"}
+      - Name: TagUnit
+        Id: ns=25;i=20405
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
+        Description: {"LocaleId":"en-US","Text":"Tag unit"}
+        Value: "cA"
+    - Name: ns=25;Temperatura
+      Id: ns=25;s=Temperatura
+      Type: TagType
+      DataType: Float
+      DisplayName: {"LocaleId":"en-US","Text":"Temperatura"}
+      ReferenceType: Organizes
+      Value: 47.60000228881836
+      Children:
+      - Name: AlarmHint
+        Id: ns=25;i=20392
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmHint"}
+        Description: {"LocaleId":"en-US","Text":"Alarm hint"}
+      - Name: AccessRights
+        Id: ns=25;i=20393
+        Type: PropertyType
+        DataType: TagAccessRights
+        DisplayName: {"LocaleId":"en-US","Text":"AccessRights"}
+        Description: {"LocaleId":"en-US","Text":"Access rights"}
+        Value: 1
+      - Name: AlarmType
+        Id: ns=25;i=20394
+        Type: PropertyType
+        DataType: TagAlarmType
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmType"}
+        Description: {"LocaleId":"en-US","Text":"Alarm type"}
+      - Name: TagId
+        Id: ns=25;i=20395
+        Type: PropertyType
+        DataType: BaseDataType
+        DisplayName: {"LocaleId":"en-US","Text":"TagId"}
+        Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
+        Value: {"Type":7,"Body":53}
+      - Name: isKPI
+        Id: ns=25;i=20396
+        Type: PropertyType
+        DataType: Boolean
+        DisplayName: {"LocaleId":"en-US","Text":"isKPI"}
+        Description: {"LocaleId":"en-US","Text":"Tag is KPI"}
+      - Name: ns=25;Quality
+        Id: ns=25;i=20397
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"en-US","Text":"Quality"}
+        Description: {"LocaleId":"en-US","Text":"Quality of the tag"}
+      - Name: TagUnit
+        Id: ns=25;i=20398
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
+        Description: {"LocaleId":"en-US","Text":"Tag unit"}
+        Value: "°C"
+    - Name: ns=25;Frecuencia
+      Id: ns=25;s=Frecuencia
+      Type: TagType
+      DataType: Float
+      DisplayName: {"LocaleId":"en-US","Text":"Frecuencia"}
+      ReferenceType: Organizes
+      Value: 60.02000045776367
+      Children:
+      - Name: AlarmHint
+        Id: ns=25;i=20385
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmHint"}
+        Description: {"LocaleId":"en-US","Text":"Alarm hint"}
+      - Name: AccessRights
+        Id: ns=25;i=20386
+        Type: PropertyType
+        DataType: TagAccessRights
+        DisplayName: {"LocaleId":"en-US","Text":"AccessRights"}
+        Description: {"LocaleId":"en-US","Text":"Access rights"}
+        Value: 1
+      - Name: AlarmType
+        Id: ns=25;i=20387
+        Type: PropertyType
+        DataType: TagAlarmType
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmType"}
+        Description: {"LocaleId":"en-US","Text":"Alarm type"}
+      - Name: TagId
+        Id: ns=25;i=20388
+        Type: PropertyType
+        DataType: BaseDataType
+        DisplayName: {"LocaleId":"en-US","Text":"TagId"}
+        Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
+        Value: {"Type":7,"Body":60}
+      - Name: isKPI
+        Id: ns=25;i=20389
+        Type: PropertyType
+        DataType: Boolean
+        DisplayName: {"LocaleId":"en-US","Text":"isKPI"}
+        Description: {"LocaleId":"en-US","Text":"Tag is KPI"}
+      - Name: ns=25;Quality
+        Id: ns=25;i=20390
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"en-US","Text":"Quality"}
+        Description: {"LocaleId":"en-US","Text":"Quality of the tag"}
+      - Name: TagUnit
+        Id: ns=25;i=20391
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
+        Description: {"LocaleId":"en-US","Text":"Tag unit"}
+        Value: "Hz"
+    - Name: ns=25;status
+      Id: ns=25;s=status
+      Type: TagType
+      DataType: Boolean
+      DisplayName: {"LocaleId":"en-US","Text":"status"}
+      ReferenceType: Organizes
+      Value: true
+      Children:
+      - Name: AlarmHint
+        Id: ns=25;i=20350
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmHint"}
+        Description: {"LocaleId":"en-US","Text":"Alarm hint"}
+      - Name: AccessRights
+        Id: ns=25;i=20351
+        Type: PropertyType
+        DataType: TagAccessRights
+        DisplayName: {"LocaleId":"en-US","Text":"AccessRights"}
+        Description: {"LocaleId":"en-US","Text":"Access rights"}
+        Value: 1
+      - Name: AlarmType
+        Id: ns=25;i=20352
+        Type: PropertyType
+        DataType: TagAlarmType
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmType"}
+        Description: {"LocaleId":"en-US","Text":"Alarm type"}
+      - Name: TagId
+        Id: ns=25;i=20353
+        Type: PropertyType
+        DataType: BaseDataType
+        DisplayName: {"LocaleId":"en-US","Text":"TagId"}
+        Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
+        Value: {"Type":7,"Body":55}
+      - Name: isKPI
+        Id: ns=25;i=20354
+        Type: PropertyType
+        DataType: Boolean
+        DisplayName: {"LocaleId":"en-US","Text":"isKPI"}
+        Description: {"LocaleId":"en-US","Text":"Tag is KPI"}
+      - Name: ns=25;Quality
+        Id: ns=25;i=20355
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"en-US","Text":"Quality"}
+        Description: {"LocaleId":"en-US","Text":"Quality of the tag"}
+      - Name: TagUnit
+        Id: ns=25;i=20356
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
+        Description: {"LocaleId":"en-US","Text":"Tag unit"}
+    - Name: ns=25;Potencia_Activa
+      Id: ns=25;s=Potencia_Activa
+      Type: TagType
+      DataType: Float
+      DisplayName: {"LocaleId":"en-US","Text":"Potencia_Activa"}
+      ReferenceType: Organizes
+      Value: 20.0
+      Children:
+      - Name: AlarmHint
+        Id: ns=25;i=20357
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmHint"}
+        Description: {"LocaleId":"en-US","Text":"Alarm hint"}
+      - Name: AccessRights
+        Id: ns=25;i=20358
+        Type: PropertyType
+        DataType: TagAccessRights
+        DisplayName: {"LocaleId":"en-US","Text":"AccessRights"}
+        Description: {"LocaleId":"en-US","Text":"Access rights"}
+        Value: 1
+      - Name: AlarmType
+        Id: ns=25;i=20359
+        Type: PropertyType
+        DataType: TagAlarmType
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmType"}
+        Description: {"LocaleId":"en-US","Text":"Alarm type"}
+      - Name: TagId
+        Id: ns=25;i=20360
+        Type: PropertyType
+        DataType: BaseDataType
+        DisplayName: {"LocaleId":"en-US","Text":"TagId"}
+        Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
+        Value: {"Type":7,"Body":56}
+      - Name: isKPI
+        Id: ns=25;i=20361
+        Type: PropertyType
+        DataType: Boolean
+        DisplayName: {"LocaleId":"en-US","Text":"isKPI"}
+        Description: {"LocaleId":"en-US","Text":"Tag is KPI"}
+      - Name: ns=25;Quality
+        Id: ns=25;i=20362
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"en-US","Text":"Quality"}
+        Description: {"LocaleId":"en-US","Text":"Quality of the tag"}
+      - Name: TagUnit
+        Id: ns=25;i=20363
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
+        Description: {"LocaleId":"en-US","Text":"Tag unit"}
+        Value: "W"
+    - Name: ns=25;Potencia_Reactiva
+      Id: ns=25;s=Potencia_Reactiva
+      Type: TagType
+      DataType: Float
+      DisplayName: {"LocaleId":"en-US","Text":"Potencia_Reactiva"}
+      ReferenceType: Organizes
+      Children:
+      - Name: AlarmHint
+        Id: ns=25;i=20364
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmHint"}
+        Description: {"LocaleId":"en-US","Text":"Alarm hint"}
+      - Name: AccessRights
+        Id: ns=25;i=20365
+        Type: PropertyType
+        DataType: TagAccessRights
+        DisplayName: {"LocaleId":"en-US","Text":"AccessRights"}
+        Description: {"LocaleId":"en-US","Text":"Access rights"}
+        Value: 1
+      - Name: AlarmType
+        Id: ns=25;i=20366
+        Type: PropertyType
+        DataType: TagAlarmType
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmType"}
+        Description: {"LocaleId":"en-US","Text":"Alarm type"}
+      - Name: TagId
+        Id: ns=25;i=20367
+        Type: PropertyType
+        DataType: BaseDataType
+        DisplayName: {"LocaleId":"en-US","Text":"TagId"}
+        Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
+        Value: {"Type":7,"Body":57}
+      - Name: isKPI
+        Id: ns=25;i=20368
+        Type: PropertyType
+        DataType: Boolean
+        DisplayName: {"LocaleId":"en-US","Text":"isKPI"}
+        Description: {"LocaleId":"en-US","Text":"Tag is KPI"}
+      - Name: ns=25;Quality
+        Id: ns=25;i=20369
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"en-US","Text":"Quality"}
+        Description: {"LocaleId":"en-US","Text":"Quality of the tag"}
+      - Name: TagUnit
+        Id: ns=25;i=20370
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
+        Description: {"LocaleId":"en-US","Text":"Tag unit"}
+    - Name: ns=25;Potencia_Aparente
+      Id: ns=25;s=Potencia_Aparente
+      Type: TagType
+      DataType: Float
+      DisplayName: {"LocaleId":"en-US","Text":"Potencia_Aparente"}
+      ReferenceType: Organizes
+      Children:
+      - Name: AlarmHint
+        Id: ns=25;i=20371
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmHint"}
+        Description: {"LocaleId":"en-US","Text":"Alarm hint"}
+      - Name: AccessRights
+        Id: ns=25;i=20372
+        Type: PropertyType
+        DataType: TagAccessRights
+        DisplayName: {"LocaleId":"en-US","Text":"AccessRights"}
+        Description: {"LocaleId":"en-US","Text":"Access rights"}
+        Value: 1
+      - Name: AlarmType
+        Id: ns=25;i=20373
+        Type: PropertyType
+        DataType: TagAlarmType
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmType"}
+        Description: {"LocaleId":"en-US","Text":"Alarm type"}
+      - Name: TagId
+        Id: ns=25;i=20374
+        Type: PropertyType
+        DataType: BaseDataType
+        DisplayName: {"LocaleId":"en-US","Text":"TagId"}
+        Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
+        Value: {"Type":7,"Body":58}
+      - Name: isKPI
+        Id: ns=25;i=20375
+        Type: PropertyType
+        DataType: Boolean
+        DisplayName: {"LocaleId":"en-US","Text":"isKPI"}
+        Description: {"LocaleId":"en-US","Text":"Tag is KPI"}
+      - Name: ns=25;Quality
+        Id: ns=25;i=20376
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"en-US","Text":"Quality"}
+        Description: {"LocaleId":"en-US","Text":"Quality of the tag"}
+      - Name: TagUnit
+        Id: ns=25;i=20377
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
+        Description: {"LocaleId":"en-US","Text":"Tag unit"}
+    - Name: ns=25;Consumo
+      Id: ns=25;s=Consumo
+      Type: TagType
+      DataType: Float
+      DisplayName: {"LocaleId":"en-US","Text":"Consumo"}
+      ReferenceType: Organizes
+      Value: 390.0
+      Children:
+      - Name: AlarmHint
+        Id: ns=25;i=20378
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmHint"}
+        Description: {"LocaleId":"en-US","Text":"Alarm hint"}
+      - Name: AccessRights
+        Id: ns=25;i=20379
+        Type: PropertyType
+        DataType: TagAccessRights
+        DisplayName: {"LocaleId":"en-US","Text":"AccessRights"}
+        Description: {"LocaleId":"en-US","Text":"Access rights"}
+        Value: 1
+      - Name: AlarmType
+        Id: ns=25;i=20380
+        Type: PropertyType
+        DataType: TagAlarmType
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmType"}
+        Description: {"LocaleId":"en-US","Text":"Alarm type"}
+      - Name: TagId
+        Id: ns=25;i=20381
+        Type: PropertyType
+        DataType: BaseDataType
+        DisplayName: {"LocaleId":"en-US","Text":"TagId"}
+        Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
+        Value: {"Type":7,"Body":59}
+      - Name: isKPI
+        Id: ns=25;i=20382
+        Type: PropertyType
+        DataType: Boolean
+        DisplayName: {"LocaleId":"en-US","Text":"isKPI"}
+        Description: {"LocaleId":"en-US","Text":"Tag is KPI"}
+      - Name: ns=25;Quality
+        Id: ns=25;i=20383
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"en-US","Text":"Quality"}
+        Description: {"LocaleId":"en-US","Text":"Quality of the tag"}
+      - Name: TagUnit
+        Id: ns=25;i=20384
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
+        Description: {"LocaleId":"en-US","Text":"Tag unit"}
+        Value: "W·h"
+    - Name: ns=25;Voltaje
+      Id: ns=25;s=Voltaje
+      Type: TagType
+      DataType: Float
+      DisplayName: {"LocaleId":"en-US","Text":"Voltaje"}
+      ReferenceType: Organizes
+      Value: 108.80000305175781
+      Children:
+      - Name: AlarmHint
+        Id: ns=25;i=20406
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmHint"}
+        Description: {"LocaleId":"en-US","Text":"Alarm hint"}
+      - Name: AccessRights
+        Id: ns=25;i=20407
+        Type: PropertyType
+        DataType: TagAccessRights
+        DisplayName: {"LocaleId":"en-US","Text":"AccessRights"}
+        Description: {"LocaleId":"en-US","Text":"Access rights"}
+        Value: 1
+      - Name: AlarmType
+        Id: ns=25;i=20408
+        Type: PropertyType
+        DataType: TagAlarmType
+        DisplayName: {"LocaleId":"en-US","Text":"AlarmType"}
+        Description: {"LocaleId":"en-US","Text":"Alarm type"}
+      - Name: TagId
+        Id: ns=25;i=20409
+        Type: PropertyType
+        DataType: BaseDataType
+        DisplayName: {"LocaleId":"en-US","Text":"TagId"}
+        Description: {"LocaleId":"en-US","Text":"eWON Tag Id"}
+        Value: {"Type":7,"Body":50}
+      - Name: isKPI
+        Id: ns=25;i=20410
+        Type: PropertyType
+        DataType: Boolean
+        DisplayName: {"LocaleId":"en-US","Text":"isKPI"}
+        Description: {"LocaleId":"en-US","Text":"Tag is KPI"}
+      - Name: ns=25;Quality
+        Id: ns=25;i=20411
+        Type: PropertyType
+        DataType: TagQualityType
+        DisplayName: {"LocaleId":"en-US","Text":"Quality"}
+        Description: {"LocaleId":"en-US","Text":"Quality of the tag"}
+      - Name: TagUnit
+        Id: ns=25;i=20412
+        Type: PropertyType
+        DataType: NormalizedString
+        DisplayName: {"LocaleId":"en-US","Text":"TagUnit"}
+        Description: {"LocaleId":"en-US","Text":"Tag unit"}
+        Value: "V"
+  - Name: TagType
+    Id: ns=25;i=2002
+    Supertype: BaseDataVariableType
+    DataType: BaseDataType
+    DisplayName: {"LocaleId":"","Text":"TagType"}
+    ValueRank: Any
+    Children:
+    - Name: ns=25;AccessRights
+      Id: ns=25;i=6003
+      Type: PropertyType
+      DataType: TagAccessRights
+      DisplayName: {"LocaleId":"","Text":"AccessRights"}
+    - Name: ns=25;AlarmHint
+      Id: ns=25;i=6001
+      Type: PropertyType
+      DataType: NormalizedString
+      DisplayName: {"LocaleId":"","Text":"AlarmHint"}
+    - Name: ns=25;AlarmType
+      Id: ns=25;i=6005
+      Type: PropertyType
+      DataType: TagAlarmType
+      DisplayName: {"LocaleId":"","Text":"AlarmType"}
+    - Name: ns=25;isKPI
+      Id: ns=25;i=6010
+      Type: PropertyType
+      DataType: Boolean
+      DisplayName: {"LocaleId":"","Text":"isKPI"}
+    - Name: ns=25;TagId
+      Id: ns=25;i=6009
+      Type: PropertyType
+      DataType: UInt32
+      DisplayName: {"LocaleId":"","Text":"TagId"}
+    - Name: ns=25;TagQuality
+      Id: ns=25;i=6016
+      Type: PropertyType
+      DataType: TagQualityType
+      DisplayName: {"LocaleId":"","Text":"TagQuality"}
+    - Name: ns=25;TagUnit
+      Id: ns=25;i=6017
+      Type: PropertyType
+      DataType: String
+      DisplayName: {"LocaleId":"","Text":"TagUnit"}
+  - Class: DataType
+    Name: TagAccessRights
+    Id: ns=25;i=3002
+    Supertype: Enumeration
+    EnumDefinition: 
+     {
+      "Name": "TagAccessRights",
+      "DataType": {
+       "Id": 3002,
+       "Namespace": 25
+      },
+      "Fields": [{
+        "Name": "ReadOnly",
+        "Value": 0,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "ReadOnly"
+        }
+       },{
+        "Name": "ReadWrite",
+        "Value": 1,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "ReadWrite"
+        }
+       }]
+     }
+    DisplayName: {"LocaleId":"","Text":"TagAccessRights"}
+    Children:
+    - Name: ns=0;EnumStrings
+      Id: ns=25;i=6002
+      Type: PropertyType
+      DataType: LocalizedText
+      DisplayName: {"LocaleId":"","Text":"EnumStrings"}
+      ValueRank: OneDimension
+      ArrayDimensions: [2]
+      Value: [{"LocaleId":"","Text":"ReadOnly"},{"LocaleId":"","Text":"ReadWrite"}]
+  - Class: DataType
+    Name: TagAlarmType
+    Id: ns=25;i=3003
+    Supertype: Enumeration
+    EnumDefinition: 
+     {
+      "Name": "TagAlarmType",
+      "DataType": {
+       "Id": 3003,
+       "Namespace": 25
+      },
+      "Fields": [{
+        "Name": "None",
+        "Value": 0,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "None"
+        }
+       },{
+        "Name": "High",
+        "Value": 1,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "High"
+        }
+       },{
+        "Name": "Low",
+        "Value": 2,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Low"
+        }
+       },{
+        "Name": "Level",
+        "Value": 3,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Level"
+        }
+       },{
+        "Name": "HighHigh",
+        "Value": 4,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "HighHigh"
+        }
+       },{
+        "Name": "LowLow",
+        "Value": 5,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "LowLow"
+        }
+       }]
+     }
+    DisplayName: {"LocaleId":"","Text":"TagAlarmType"}
+    Children:
+    - Name: ns=0;EnumStrings
+      Id: ns=25;i=6004
+      Type: PropertyType
+      DataType: LocalizedText
+      DisplayName: {"LocaleId":"","Text":"EnumStrings"}
+      ValueRank: OneDimension
+      ArrayDimensions: [6]
+      Value: [{"LocaleId":"","Text":"None"},{"LocaleId":"","Text":"High"},{"LocaleId":"","Text":"Low"},{"LocaleId":"","Text":"Level"},{"LocaleId":"","Text":"HighHigh"},{"LocaleId":"","Text":"LowLow"}]
+  - Class: DataType
+    Name: TagQualityType
+    Id: ns=25;i=3004
+    Supertype: Enumeration
+    EnumDefinition: 
+     {
+      "Name": "TagQualityType",
+      "DataType": {
+       "Id": 3004,
+       "Namespace": 25
+      },
+      "Fields": [{
+        "Name": "Good",
+        "Value": 0,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Good"
+        }
+       },{
+        "Name": "Bad",
+        "Value": 1,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Bad"
+        }
+       },{
+        "Name": "Uncertain",
+        "Value": 2,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "Uncertain"
+        }
+       },{
+        "Name": "ConfigurationError",
+        "Value": 3,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "ConfigurationError"
+        }
+       },{
+        "Name": "DeviceFailure",
+        "Value": 4,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "DeviceFailure"
+        }
+       },{
+        "Name": "CommunicationFailure",
+        "Value": 5,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "CommunicationFailure"
+        }
+       },{
+        "Name": "OutOfService",
+        "Value": 6,
+        "DisplayName": {
+         "LocaleId": "",
+         "Text": "OutOfService"
+        }
+       }]
+     }
+    DisplayName: {"LocaleId":"","Text":"TagQualityType"}
+    Children:
+    - Name: ns=0;EnumStrings
+      Id: ns=25;i=6011
+      Type: PropertyType
+      DataType: LocalizedText
+      DisplayName: {"LocaleId":"","Text":"EnumStrings"}
+      ValueRank: OneDimension
+      ArrayDimensions: [7]
+      Value: [{"LocaleId":"","Text":"Good"},{"LocaleId":"","Text":"Bad"},{"LocaleId":"","Text":"Uncertain"},{"LocaleId":"","Text":"ConfigurationError"},{"LocaleId":"","Text":"DeviceFailure"},{"LocaleId":"","Text":"CommunicationFailure"},{"LocaleId":"","Text":"OutOfService"}]

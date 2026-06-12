@@ -49,10 +49,10 @@ Children:
         DataType: Boolean
   - Name: MinimumMessageSecurityMode
     Type: PropertyType
-    DataType: MessageSecurityModeEnum
+    DataType: ns=3;MessageSecurityModeEnum
   - Name: MinimumSecurityPolicy
     Type: PropertyType
-    DataType: SecurityPolicyEnum
+    DataType: ns=3;SecurityPolicyEnum
   - Name: MaxNumberOfConnections
     Type: BaseDataVariableType
     DataType: UInt32
@@ -61,3 +61,4 @@ Children:
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
+- File: Flexy/Flexy.yaml

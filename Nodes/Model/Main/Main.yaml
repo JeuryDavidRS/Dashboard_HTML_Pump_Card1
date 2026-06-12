@@ -11,7 +11,7 @@ Children:
     Id: g=1ae040f447319cb730cfbe20c576a8b5
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../CommDrivers/ModbusDriver1/Circutor/Tags/Voltaje"
+    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Voltaje"
     Children:
     - Name: Mode
       Id: g=bfe2d39d939b69b820c171aa44cb0fcb
@@ -27,7 +27,7 @@ Children:
     Id: g=955c0caa4109052df33aee26c28b2ae4
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../CommDrivers/ModbusDriver1/Circutor/Tags/Corriente"
+    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Corriente"
     Children:
     - Name: Mode
       Id: g=375cad448950bc5461bed16844761559
@@ -38,18 +38,66 @@ Children:
   Id: g=b90ccad83d9400834b3c2af713ba0fa4
   Type: BaseDataVariableType
   DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=0cb529ddceddcc7e9154219acfcead79
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Potencia_Activa"
+    Children:
+    - Name: Mode
+      Id: g=e92afc80d54a8192523025a13f59985b
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: Frecuencia
   Id: g=7e21b7b5bb4cee09af75c05159eb9d51
   Type: BaseDataVariableType
   DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=b8ff4810ec5a9ae2ac0f8de24e46fa44
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Frecuencia"
+    Children:
+    - Name: Mode
+      Id: g=88abdbc560ed17ab226f2f6c42477cd3
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: Temperatura
   Id: g=bc6c00d77e826656e5fbc39f3f034df2
   Type: BaseDataVariableType
   DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=0759e8553c46aa1fd69e56f29d0e97cd
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Temperatura"
+    Children:
+    - Name: Mode
+      Id: g=55cc2b8437d6bbba96979faaf0802dfa
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: OnOff
   Id: g=d493502f80920f56cdd40ea44556019f
   Type: BaseDataVariableType
   DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Id: g=ec73a16c8b428c0349aa3b687f52c491
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/status"
+    Children:
+    - Name: Mode
+      Id: g=20d27f650736f912c9d8ea9b8b81e634
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: Alarm
   Id: g=8fc5b92ef7a66c1ad9645421d0c7fd56
   Type: BaseDataVariableType
@@ -59,7 +107,7 @@ Children:
     Id: g=ff669033ef4cc6bd1676c4dd0ec330b0
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../CommDrivers/ModbusDriver1/IO/Tags/Alarma"
+    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/IO_O3"
     Children:
     - Name: Mode
       Id: g=dd4a0da7d9a708d03d160aff8bb05428
@@ -70,11 +118,47 @@ Children:
   Id: g=eb2c5bc9bca36455c58e7df012e99f01
   Type: BaseDataVariableType
   DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=40b69fc22e9a15a097f78a3a04537f13
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Potencia_Aparente"
+    Children:
+    - Name: Mode
+      Id: g=658d09b62315c0f5aceaa3ea1f7df0d2
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: Potencia Reactiva
   Id: g=2f5b9c6dbb53698a6c8ea4962f0825e6
   Type: BaseDataVariableType
   DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=d2cc555e59fd0939adae2c8eb0112199
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Potencia_Reactiva"
+    Children:
+    - Name: Mode
+      Id: g=26683a8c8857ae24cc73d43a04732eb6
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
 - Name: Consumo Electrico
   Id: g=1e6e626970142bdbbb8958d8d2e91992
   Type: BaseDataVariableType
   DataType: Float
+  Children:
+  - Name: DynamicLink
+    Id: g=9e9068c290f87d5a2f1f19ebf34f4fcd
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Consumo"
+    Children:
+    - Name: Mode
+      Id: g=ecaaf6b1805adec84c81482d12c5295b
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

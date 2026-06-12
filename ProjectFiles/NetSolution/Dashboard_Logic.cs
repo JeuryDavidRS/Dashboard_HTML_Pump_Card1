@@ -15,6 +15,7 @@ using FTOptix.WebUI;
 using FTOptix.OPCUAServer;
 using FTOptix.CommunicationDriver;
 using FTOptix.Modbus;
+using FTOptix.OPCUAClient;
 #endregion
 
 public class Dashboard_Logic : BaseNetLogic
@@ -442,7 +443,7 @@ public class Dashboard_Logic : BaseNetLogic
 
         js.AppendLine("document.addEventListener('DOMContentLoaded', function(){");
         js.AppendLine("  poll();");
-        js.AppendLine("  setInterval(poll, 2000);");
+        js.AppendLine("  setInterval(poll, 600);");
         js.AppendLine("});");
 
         File.WriteAllText(rutaAppJs, js.ToString());

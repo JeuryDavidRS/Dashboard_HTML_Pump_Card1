@@ -1,4 +1,2 @@
 Name: CommDrivers
 Type: CommDriversCategoryFolder
-Children:
-- File: ModbusDriver1/ModbusDriver1.yaml

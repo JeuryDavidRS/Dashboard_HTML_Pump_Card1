@@ -16,6 +16,7 @@ using System;
 using System.IO;
 using System.Linq;
 using UAManagedCore;
+using FTOptix.OPCUAClient;
 using OpcUa = UAManagedCore.OpcUa;
 #endregion
 

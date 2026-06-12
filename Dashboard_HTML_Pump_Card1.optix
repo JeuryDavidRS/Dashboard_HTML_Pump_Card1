@@ -73,32 +73,27 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 4.0
-  19:
-   Uri: 'urn:FTOptix:CommunicationDriver'
-   Module: FTOptix.CommunicationDriver
-   Version: 3.0
-  20:
-   Uri: 'urn:FTOptix:CommunicationDriver:Net'
-   Module: FTOptix.CommunicationDriver.Net
-   Version: 3.0
-  21:
-   Uri: 'urn:FTOptix:Modbus'
-   Module: FTOptix.Modbus
-   Version: 1.0
-  22:
-   Uri: 'urn:FTOptix:Modbus:Net'
-   Module: FTOptix.Modbus.Net
-   Version: 1.0
+  23:
+   Uri: 'urn:FTOptix:OPCUAClient'
+   Module: FTOptix.OPCUAClient
+   Version: 2.0
+  24:
+   Uri: 'urn:FTOptix:OPCUAClient:Net'
+   Module: FTOptix.OPCUAClient.Net
+   Version: 1.2
+  25:
+   Uri: 'a3db72712d55dc5caae1acbff6029fd4#http://ewon.biz/Ewontags/'
+   ServerUri: a3db72712d55dc5caae1acbff6029fd4
  Statistics:
-  TotalNodeCount: 1076
-  Objects: 232
+  TotalNodeCount: 1118
+  Objects: 215
   ObjectTypes: 6
-  Variables: 838
-  VariableTypes: 0
-  DataTypes: 0
+  Variables: 893
+  VariableTypes: 1
+  DataTypes: 3
   Methods: 0
-  References: 30
+  References: 27
   ReferenceTypes: 0
-  Files: 32
+  Files: 24
  Nodes:
  - File: Nodes/Dashboard_HTML_Pump_Card1.yaml
