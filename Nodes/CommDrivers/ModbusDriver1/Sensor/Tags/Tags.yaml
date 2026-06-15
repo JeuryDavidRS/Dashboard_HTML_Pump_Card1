@@ -1,2 +1,6 @@
 Name: Tags
 Type: FolderType
+Children:
+- Name: Temp
+  Type: ModbusTag
+  DataType: Int16

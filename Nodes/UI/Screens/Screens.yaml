@@ -491,7 +491,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Dashboard_HTML_Pump_Card1/OPC-UA/Flexy/Objects/EwonTags/IO_O1"
+              Value: "/Objects/Dashboard_HTML_Pump_Card1/CommDrivers/ModbusDriver1/IO/Tags/On"
               Children:
               - Name: Mode
                 Type: BaseVariableType
@@ -974,7 +974,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: "/Objects/Dashboard_HTML_Pump_Card1/OPC-UA/Flexy/Objects/EwonTags/IO_O2"
+              Value: "/Objects/Dashboard_HTML_Pump_Card1/CommDrivers/ModbusDriver1/IO/Tags/Off"
               Children:
               - Name: Mode
                 Type: BaseVariableType
@@ -2127,7 +2127,7 @@ Children:
           Type: BaseVariableType
           DataType: Size
           ModellingRule: Optional
-          Value: 30.0
+          Value: 25.0
         - Name: Height
           Type: BaseVariableType
           DataType: Size
@@ -2457,7 +2457,7 @@ Children:
             - Name: Path
               Type: BaseDataVariableType
               DataType: String
-              Value: "C:\\Program Files (x86)\\Exakom\\PLUTO Analytics\\Projects\\Reports\\DemoAnalytics\\1 PERFORMANCE\\1 PERFORMANCE.png"
+              Value: "C:\\Program Files (x86)\\Exakom\\PLUTO Analytics\\Projects\\Reports\\DemoAnalytics\\Bomba\\Bomba.png"
           - Name: FillMode
             Type: BaseDataVariableType
             DataType: FillModeEnum

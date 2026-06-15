@@ -61,14 +61,6 @@ Project:
    Uri: 'urn:FTOptix:WebUI:Net'
    Module: FTOptix.WebUI.Net
    Version: 1.2
-  15:
-   Uri: 'urn:FTOptix:NativeUI'
-   Module: FTOptix.NativeUI
-   Version: 3.1
-  16:
-   Uri: 'urn:FTOptix:NativeUI:Net'
-   Module: FTOptix.NativeUI.Net
-   Version: 1.0
   17:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
@@ -89,27 +81,24 @@ Project:
    Uri: 'urn:FTOptix:Modbus:Net'
    Module: FTOptix.Modbus.Net
    Version: 1.0
-  23:
-   Uri: 'urn:FTOptix:OPCUAClient'
-   Module: FTOptix.OPCUAClient
-   Version: 2.0
-  24:
-   Uri: 'urn:FTOptix:OPCUAClient:Net'
-   Module: FTOptix.OPCUAClient.Net
-   Version: 1.2
-  25:
-   Uri: 'a3db72712d55dc5caae1acbff6029fd4#http://ewon.biz/Ewontags/'
-   ServerUri: a3db72712d55dc5caae1acbff6029fd4
+  26:
+   Uri: 'urn:FTOptix:NativeUI'
+   Module: FTOptix.NativeUI
+   Version: 3.1
+  27:
+   Uri: 'urn:FTOptix:NativeUI:Net'
+   Module: FTOptix.NativeUI.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 1195
-  Objects: 231
-  ObjectTypes: 6
-  Variables: 954
-  VariableTypes: 1
-  DataTypes: 3
+  TotalNodeCount: 946
+  Objects: 219
+  ObjectTypes: 2
+  Variables: 725
+  VariableTypes: 0
+  DataTypes: 0
   Methods: 0
-  References: 45
+  References: 32
   ReferenceTypes: 0
-  Files: 37
+  Files: 36
  Nodes:
  - File: Nodes/Dashboard_HTML_Pump_Card1.yaml

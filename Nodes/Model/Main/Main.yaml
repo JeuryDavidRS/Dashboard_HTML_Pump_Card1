@@ -7,33 +7,53 @@ Children:
   Type: BaseDataVariableType
   DataType: Float
   Children:
-  - Name: DynamicLink
-    Id: g=1ae040f447319cb730cfbe20c576a8b5
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Voltaje"
+  - Name: ExpressionEvaluator1
+    Id: g=73eb3732ef57451acc4a4d6d8218ccee
+    Type: ExpressionEvaluator
     Children:
-    - Name: Mode
-      Id: g=bfe2d39d939b69b820c171aa44cb0fcb
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+    - Name: Expression
+      Id: g=bc759b389b2cd93a36f4963ea70dcc0a
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0}/10"
+    - Name: ns=5;Source0
+      Id: g=9d748cbfba71b8a26d22e3721ec540b2
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=1ae040f447319cb730cfbe20c576a8b5
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/ModbusDriver1/Circutor/Tags/Voltaje"
 - Name: Corriente
   Id: g=50dc4ba0eb393cd252d7ce97d1cd92b3
   Type: BaseDataVariableType
   DataType: Float
   Children:
-  - Name: DynamicLink
-    Id: g=955c0caa4109052df33aee26c28b2ae4
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Corriente"
+  - Name: ExpressionEvaluator1
+    Id: g=496f2be0a4f8b1b1d700eb4cd29a9824
+    Type: ExpressionEvaluator
     Children:
-    - Name: Mode
-      Id: g=375cad448950bc5461bed16844761559
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+    - Name: Expression
+      Id: g=657833d0edb488591d3c23f467ee97bc
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0}/100"
+    - Name: ns=5;Source0
+      Id: g=2de5f9ca64909538c6f5b9fb53e3fa98
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=955c0caa4109052df33aee26c28b2ae4
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/ModbusDriver1/Circutor/Tags/Corriente"
 - Name: Potencia Activa
   Id: g=b90ccad83d9400834b3c2af713ba0fa4
   Type: BaseDataVariableType
@@ -43,7 +63,7 @@ Children:
     Id: g=0cb529ddceddcc7e9154219acfcead79
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Potencia_Activa"
+    Value: "../../../CommDrivers/ModbusDriver1/Circutor/Tags/Potencia Activa"
     Children:
     - Name: Mode
       Id: g=e92afc80d54a8192523025a13f59985b
@@ -55,33 +75,53 @@ Children:
   Type: BaseDataVariableType
   DataType: Float
   Children:
-  - Name: DynamicLink
-    Id: g=b8ff4810ec5a9ae2ac0f8de24e46fa44
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Frecuencia"
+  - Name: ExpressionEvaluator1
+    Id: g=9e4622aa256db5e52e344d0a7a4116e5
+    Type: ExpressionEvaluator
     Children:
-    - Name: Mode
-      Id: g=88abdbc560ed17ab226f2f6c42477cd3
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+    - Name: Expression
+      Id: g=a16d4f919534421ec66b3ddc7e9a544f
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0}/100"
+    - Name: ns=5;Source0
+      Id: g=7f235de4139d8b93a5618d4b6706e3d0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=b8ff4810ec5a9ae2ac0f8de24e46fa44
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/ModbusDriver1/Circutor/Tags/Frecuencia"
 - Name: Temperatura
   Id: g=bc6c00d77e826656e5fbc39f3f034df2
   Type: BaseDataVariableType
   DataType: Float
   Children:
-  - Name: DynamicLink
-    Id: g=0759e8553c46aa1fd69e56f29d0e97cd
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Temperatura"
+  - Name: ExpressionEvaluator1
+    Id: g=14cdb37a1f175bcf60be63109669c6a5
+    Type: ExpressionEvaluator
     Children:
-    - Name: Mode
-      Id: g=55cc2b8437d6bbba96979faaf0802dfa
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+    - Name: Expression
+      Id: g=db374339ab76fe5b49cd9447f871a17a
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0}/10"
+    - Name: ns=5;Source0
+      Id: g=f81effc1e24f9c9fc5f416b9f167f86f
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=0759e8553c46aa1fd69e56f29d0e97cd
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/ModbusDriver1/Sensor/Tags/Temp"
 - Name: OnOff
   Id: g=d493502f80920f56cdd40ea44556019f
   Type: BaseDataVariableType
@@ -91,7 +131,7 @@ Children:
     Id: g=ec73a16c8b428c0349aa3b687f52c491
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/status"
+    Value: "../../../CommDrivers/ModbusDriver1/IO/Tags/Status"
     Children:
     - Name: Mode
       Id: g=20d27f650736f912c9d8ea9b8b81e634
@@ -107,42 +147,10 @@ Children:
     Id: g=ff669033ef4cc6bd1676c4dd0ec330b0
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/IO_O3"
+    Value: "../../../CommDrivers/ModbusDriver1/IO/Tags/Alarma"
     Children:
     - Name: Mode
       Id: g=dd4a0da7d9a708d03d160aff8bb05428
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Potencia Aparente
-  Id: g=eb2c5bc9bca36455c58e7df012e99f01
-  Type: BaseDataVariableType
-  DataType: Float
-  Children:
-  - Name: DynamicLink
-    Id: g=40b69fc22e9a15a097f78a3a04537f13
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Potencia_Aparente"
-    Children:
-    - Name: Mode
-      Id: g=658d09b62315c0f5aceaa3ea1f7df0d2
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
-- Name: Potencia Reactiva
-  Id: g=2f5b9c6dbb53698a6c8ea4962f0825e6
-  Type: BaseDataVariableType
-  DataType: Float
-  Children:
-  - Name: DynamicLink
-    Id: g=d2cc555e59fd0939adae2c8eb0112199
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Potencia_Reactiva"
-    Children:
-    - Name: Mode
-      Id: g=26683a8c8857ae24cc73d43a04732eb6
       Type: BaseVariableType
       DataType: DynamicLinkMode
       Value: 2
@@ -155,7 +163,7 @@ Children:
     Id: g=9e9068c290f87d5a2f1f19ebf34f4fcd
     Type: DynamicLink
     DataType: NodePath
-    Value: "../../../OPC-UA/Flexy/Objects/EwonTags/Consumo"
+    Value: "../../../CommDrivers/ModbusDriver1/Circutor/Tags/Consumo"
     Children:
     - Name: Mode
       Id: g=ecaaf6b1805adec84c81482d12c5295b

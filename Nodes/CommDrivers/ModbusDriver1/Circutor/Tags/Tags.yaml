@@ -22,3 +22,27 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 2
+- Name: Potencia Activa
+  Type: ModbusTag
+  DataType: Int32
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 4
+- Name: Consumo
+  Type: ModbusTag
+  DataType: Int32
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 18
+- Name: Frecuencia
+  Type: ModbusTag
+  DataType: Int16
+  Children:
+  - Name: NumRegister
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 90

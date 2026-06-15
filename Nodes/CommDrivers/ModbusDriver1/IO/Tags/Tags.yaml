@@ -36,3 +36,15 @@ Children:
     Type: BaseDataVariableType
     DataType: UInt16
     Value: 2
+- Name: Status
+  Type: ModbusTag
+  DataType: Boolean
+  Children:
+  - Name: MemoryArea
+    Type: BaseDataVariableType
+    DataType: ModbusMemoryArea
+    Value: 3
+  - Name: NumDiscreteInput
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 3
