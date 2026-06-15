@@ -23,7 +23,7 @@ public class Dashboard_Logic : BaseNetLogic
 {
     private PeriodicTask tareaActualizacion;
     private IUAObject parentLine;
-    private var instanceName = Guid.NewGuid().ToString().Replace("-", "");
+    private string instanceName = Guid.NewGuid().ToString().Replace("-", "");
 
     public override void Start()
     {
