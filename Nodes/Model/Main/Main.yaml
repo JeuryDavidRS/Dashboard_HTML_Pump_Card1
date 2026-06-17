@@ -159,14 +159,24 @@ Children:
   Type: BaseDataVariableType
   DataType: Float
   Children:
-  - Name: DynamicLink
-    Id: g=9e9068c290f87d5a2f1f19ebf34f4fcd
-    Type: DynamicLink
-    DataType: NodePath
-    Value: "../../../CommDrivers/ModbusDriver1/Circutor/Tags/Consumo"
+  - Name: ExpressionEvaluator1
+    Id: g=c79a10f68c2f02d5a5b3461154b4a308
+    Type: ExpressionEvaluator
     Children:
-    - Name: Mode
-      Id: g=ecaaf6b1805adec84c81482d12c5295b
-      Type: BaseVariableType
-      DataType: DynamicLinkMode
-      Value: 2
+    - Name: Expression
+      Id: g=21a2e7b85e8e27c2cb03f384c46bad16
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "{0}*10"
+    - Name: ns=5;Source0
+      Id: g=72f3d3f61e10e3cb81c7a5d94046194b
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Id: g=9e9068c290f87d5a2f1f19ebf34f4fcd
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/ModbusDriver1/Circutor/Tags/Consumo"

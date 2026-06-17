@@ -185,34 +185,6 @@ Children:
                 DataType: DynamicLinkMode
                 ModellingRule: Optional
                 Value: 2
-          - Name: PotenciaReactiva
-            Type: BaseDataVariableType
-            DataType: Float
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{Estacion}/Potencia Reactiva"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: PotenciaAparente
-            Type: BaseDataVariableType
-            DataType: Float
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{Estacion}/Potencia Aparente"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
           - Name: ConsumoElectrico
             Type: BaseDataVariableType
             DataType: Float
@@ -227,6 +199,33 @@ Children:
                 DataType: DynamicLinkMode
                 ModellingRule: Optional
                 Value: 2
+          - Name: ColorBorde
+            Type: BaseDataVariableType
+            DataType: Int16
+            Children:
+            - Name: ConditionalConverter1
+              Type: ConditionalConverter
+              Children:
+              - Name: Condition
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../800IlluminatedPushButton1/ToggleButton1/Active"
+              - Name: TrueValue
+                Type: BaseDataVariableType
+                DataType: Int16
+                ReferenceType: HasParameter
+                ModellingRule: Optional
+                Value: 1
+              - Name: FalseValue
+                Type: BaseDataVariableType
+                DataType: Int16
+                ReferenceType: HasParameter
+                ModellingRule: Optional
         - Name: HorizontalAlignment
           Type: BaseVariableType
           DataType: HorizontalAlignment

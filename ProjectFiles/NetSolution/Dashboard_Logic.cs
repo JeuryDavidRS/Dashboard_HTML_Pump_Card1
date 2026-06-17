@@ -34,7 +34,7 @@ public class Dashboard_Logic : BaseNetLogic
             var rutaHtml = ResourceUri.FromProjectRelativePath($"External_Res/index_{instanceName}.html");
             var rutaData = ResourceUri.FromProjectRelativePath($"External_Res/data_{instanceName}.json");
 
-            var IPAdress = Project.Current.GetVariable("Root/Types/ObjectTypes/BaseObjectType/SessionType/UISession/IpAddress").Value;
+            Log.Info("BombaDashboard", $"Iniciando dashboard para instancia '{instanceName}'");
 
             string folder = Path.GetDirectoryName(rutaHtml.Uri);
             if (!Directory.Exists(folder)) Directory.CreateDirectory(folder);
@@ -46,7 +46,7 @@ public class Dashboard_Logic : BaseNetLogic
             browser.URL = rutaHtml;
             browser.Refresh();
 
-            tareaActualizacion = new PeriodicTask(Loop, 200, LogicObject);
+            tareaActualizacion = new PeriodicTask(Loop, 250, LogicObject);
             tareaActualizacion.Start();
         }
         catch (Exception ex)
@@ -81,6 +81,7 @@ public class Dashboard_Logic : BaseNetLogic
         sb.AppendLine($"  \"frecuencia\":{Ff("Frecuencia").ToString("F2", System.Globalization.CultureInfo.InvariantCulture)},");
         sb.AppendLine($"  \"pot_activa\":{Ff("Potencia").ToString("F2", System.Globalization.CultureInfo.InvariantCulture)},");
         sb.AppendLine($"  \"consumo\":{Ff("ConsumoElectrico").ToString("F2", System.Globalization.CultureInfo.InvariantCulture)},");
+        sb.AppendLine($"  \"color_borde\":{Fi("ColorBorde")},");
         sb.AppendLine($"  \"estado\":{Fi("Estado")}");
         sb.AppendLine("}");
 
@@ -144,7 +145,7 @@ public class Dashboard_Logic : BaseNetLogic
         h.AppendLine(".kpi-card:last-child{border-right:none;}");
         h.AppendLine(".kpi-lbl{font-size:clamp(18px,1vw,20px);color:var(--cyan);letter-spacing:3px;text-transform:uppercase;font-weight:600;}");
         h.AppendLine(".kpi-val{font-size:clamp(28px,4.2vw,48px);font-weight:700;color:#ffffff;line-height:1;letter-spacing:-1px;text-shadow:0 0 12px rgba(77,163,255,0.55);}");
-        h.AppendLine(".kpi-val span{font-size:clamp(11px,1.3vw,15px);color:var(--cyan);margin-left:3px;font-weight:400;text-shadow:none;}");
+        h.AppendLine(".kpi-val span{font-size:clamp(15px,1.8vw,22px);color:var(--cyan);margin-left:3px;font-weight:400;text-shadow:none;}");
 
         h.AppendLine(".charts-row{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--border);background:var(--bg2);height:clamp(180px,32vh,280px);}");
         h.AppendLine(".chart-card{border-right:1px solid var(--border);padding:clamp(10px,1.8%,18px) clamp(12px,2%,20px);display:flex;flex-direction:column;gap:6px;overflow:hidden;}");
@@ -248,8 +249,8 @@ public class Dashboard_Logic : BaseNetLogic
         s.Append("<rect x='45' y='185' width='30' height='10' rx='2' fill='#1e2d45'/>");
         s.Append("<rect x='225' y='185' width='50' height='10' rx='2' fill='#1e2d45'/>");
 
-        // Ventilador (carcasa circular)
-        s.Append("<circle cx='105' cy='130' r='80' fill='url(#gFanHub)' stroke='var(--cyan)' stroke-width='2.5' opacity='0.95'/>");
+        // Ventilador (carcasa circular) - borde con id para cambiar color
+        s.Append("<circle id='fan-ring' cx='105' cy='130' r='80' fill='url(#gFanHub)' stroke='var(--cyan)' stroke-width='2.5' opacity='0.95'/>");
         s.Append("<circle cx='105' cy='130' r='80' fill='none' stroke='var(--cyan)' stroke-width='3' opacity='0.18'/>");
         s.Append("<circle cx='105' cy='130' r='66' fill='none' stroke='#2a3a55' stroke-width='1'/>");
         s.Append("<circle cx='105' cy='130' r='66' fill='none' stroke='#252f45' stroke-width='10' stroke-dasharray='4 6' opacity='.5'/>");
@@ -410,6 +411,15 @@ public class Dashboard_Logic : BaseNetLogic
         js.AppendLine("  var mFill     = estado===2?'#e84040':estado===1?'#f0a030':'#304060';");
         js.AppendLine("  if(led){  led.setAttribute('fill',ledFill);   led.setAttribute('stroke',ledStroke); }");
         js.AppendLine("  if(mled){ mled.setAttribute('fill',mFill);    mled.setAttribute('stroke',ledStroke); }");
+
+        // color del borde del ventilador segun la variable color_borde (0=cyan, 1=naranja)
+        js.AppendLine("  var ring = document.getElementById('fan-ring');");
+        js.AppendLine("  if(ring){");
+        js.AppendLine("    var cb = d.color_borde || 0;");
+        js.AppendLine("    var ringColor = (cb === 1) ? '#f5a623' : '#29b6f6';");
+        js.AppendLine("    ring.setAttribute('stroke', ringColor);");
+        js.AppendLine("    ring.style.filter = (cb === 1) ? 'drop-shadow(0 0 8px rgba(245,166,35,0.7))' : 'none';");
+        js.AppendLine("  }");
 
         js.AppendLine("  var imp = document.getElementById('pump-impeller');");
         js.AppendLine("  if(imp) imp.style.animation = estado===1 ? 'spin-cw .8s linear infinite' : 'none';");
